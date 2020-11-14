@@ -1,0 +1,462 @@
+@import  url ( "https://image.noelshack.com/fichiers/2020/07/1/1581323637-web-1920-14.jpg" );
+html {
+    position : relative;
+    overflow-x : caché ! important ;
+}
+
+* {
+    box-dimensionnement : border-box;
+}
+
+corps {
+    background : URL de la zone de contenu (https://image.noelshack.com/fichiers/2020/07/1/1581323637-web-1920-14.jpg);
+    background-attachment : faire défiler;
+    background-size : couverture;
+    famille de polices : 'Quicksand' , sans-serif;
+    couleur : # 324e63 ;
+    marge : 0 px ;
+    remplissage : 0 px ;
+}
+
+. imgx {
+    -moz-border-radius : 7 px ;
+    -webkit-border-radius : 7 px ;
+    rayon de la bordure : 7 px ;
+}
+
+. imgprofil {
+    largeur : 100 % ;
+    padding-top : 50 px ;
+    affichage : flex;
+    flex-direction : ligne;
+    justify-content : centre;
+    flex-wrap : enveloppement;
+}
+
+. imgprofil  a {
+    largeur : 150 px ;
+    hauteur : 150 px ;
+    débordement : caché;
+    marge : 10 px ;
+}
+
+. imgprofil  une  img {
+    largeur : 100 % ;
+    ajustement de l'objet : couverture;
+    position de l'objet : centre;
+}
+
+un ,
+a : hover {
+    texte-décoration : aucun;
+}
+
+. icône {
+    affichage : bloc en ligne;
+    largeur : 1 em ;
+    hauteur : 1 em ;
+    largeur de trait : 0 ;
+    stroke : currentColor;
+    fill : currentColor;
+}
+
+. wrapper {
+    largeur : 100 % ;
+    largeur : 100 % ;
+    hauteur : 100 % ;
+    hauteur min : 100 vh ;
+    rembourrage : centre;
+    haut du rembourrage : 200 px ;
+    image de fond : url (/assets/background.svg);
+    background-size : couverture;
+    background-repeat : pas de répétition;
+}
+
+@ écran multimédia et ( largeur max : 768 px ) {
+    . wrapper {
+        hauteur : auto;
+        hauteur min : 100 vh ;
+        padding-top : 100 px ;
+    }
+}
+
+. profile-card {
+    largeur : 100 % ;
+    hauteur min : 460 px ;
+    marge : automatique;
+    boîte-ombre : 0 px  8 px  60 px -10px rgba ( 13 ,  28 ,  39 ,  0,6 );
+    arrière - plan : # fff ;
+    rayon de la bordure : 12 px ;
+    largeur maximale : 700 px ;
+    position : relative;
+}
+
+. carte de profil . actif . profile-card__cnt {
+    filtre : flou ( 6 px );
+}
+
+. carte de profil . actif . message-carte-profil ,
+. carte de profil . actif . profile-card__overlay {
+    opacité : 1 ;
+    événements de pointeur : auto;
+    délai de transition : 0,1 s ;
+}
+
+. carte de profil . actif . profile-card-form {
+    transformer : aucun;
+    délai de transition : 0,1 s ;
+}
+
+. profile-card__img {
+    largeur : 150 px ;
+    hauteur : 150 px ;
+    marge gauche : auto;
+    marge droite : auto;
+    transformer : translateY ( -50 % );
+    rayon de la frontière : 50 % ;
+    débordement : caché;
+    position : relative;
+    indice z : 4 ;
+    boîte-ombre : 0 px  5 px  50 px  0 px  # 6c44fc ,  0 px  0 px  0 px  7 px  rgba ( 107 ,  74 ,  255 ,  0,5 );
+}
+
+@ écran multimédia et ( largeur max : 576 px ) {
+    . profile-card__img {
+        largeur : 120 px ;
+        hauteur : 120 px ;
+    }
+}
+
+. profile-card__img  img {
+    affichage : bloc;
+    largeur : 100 % ;
+    hauteur : 100 % ;
+    ajustement de l'objet : couverture;
+    rayon de la frontière : 50 % ;
+}
+
+. profile-card__cnt {
+    margin-top : -35px;
+    text-align : centre;
+    rembourrage : 0  20 px ;
+    padding-bottom : 40 px ;
+    transition : toutes les 0,3 s ;
+}
+
+. profile-card__name {
+    poids de la police : 700 ;
+    taille de la police : 24 px ;
+    couleur : # 6944ff ;
+    marge inférieure : 15 px ;
+}
+
+. profile-card__txt {
+    taille de la police : 18 px ;
+    poids de la police : 500 ;
+    couleur : # 324e63 ;
+    marge inférieure : 15 px ;
+}
+
+. profile-card__txt  strong {
+    poids de la police : 700 ;
+}
+
+. profile-card-loc {
+    affichage : flex;
+    justify-content : centre;
+    align-items : centre;
+    taille de la police : 18 px ;
+    poids de la police : 600 ;
+}
+
+. profile-card-loc__icon {
+    affichage : inline-flex;
+    taille de la police : 27 px ;
+    marge droite : 10 px ;
+}
+
+. profile-card-inf {
+    affichage : flex;
+    justify-content : centre;
+    flex-wrap : enveloppement;
+    align-items : flex-start;
+    marge supérieure : 35 px ;
+}
+
+. profile-card-inf__item {
+    rembourrage : 10 px  35 px ;
+    largeur min : 150 px ;
+}
+
+@ écran multimédia et ( largeur max : 768 px ) {
+    . profile-card-inf__item {
+        rembourrage : 10 px  20 px ;
+        largeur min : 120 px ;
+    }
+}
+
+. profile-card-inf__title {
+    poids de la police : 700 ;
+    taille de la police : 27 px ;
+    couleur : # 324e63 ;
+}
+
+. profile-card-inf__txt {
+    poids de la police : 500 ;
+    margin-top : 7 px ;
+}
+
+. profile-card-social {
+    marge supérieure : 25 px ;
+    affichage : flex;
+    justify-content : centre;
+    align-items : centre;
+    flex-wrap : enveloppement;
+}
+
+. profile-card-social__item {
+    affichage : inline-flex;
+    largeur : 55 px ;
+    hauteur : 55 px ;
+    marge : 15 px ;
+    rayon de la frontière : 50 % ;
+    align-items : centre;
+    justify-content : centre;
+    couleur : # fff ;
+    arrière - plan : # 405de6 ;
+    boîte-ombre : 0 px  7 px  30 px  rgba ( 43 ,  98 ,  169 ,  0,5 );
+    position : relative;
+    taille de la police : 21 px ;
+    flex-shrink : 0 ;
+    transition : toutes les 0,3 s ;
+}
+
+@ écran multimédia et ( largeur max : 768 px ) {
+    . profile-card-social__item {
+        largeur : 50 px ;
+        hauteur : 50 px ;
+        marge : 10 px ;
+    }
+}
+
+@ écran multimédia et ( largeur min : 768 px ) {
+    . profile-card-social__item : hover {
+        transformée : échelle ( 1,2 );
+    }
+}
+
+. profile-card-social__item . facebook {
+    arrière - plan : gradient linéaire ( 45 degrés ,  # 3b5998 ,  # 0078d7 );
+    boîte-ombre : 0 px  4 px  30 px  rgba ( 43 ,  98 ,  169 ,  0.5 );
+}
+
+. profile-card-social__item . twitter {
+    arrière - plan : gradient linéaire ( 45 degrés ,  # 1da1f2 ,  # 0e71c8 );
+    boîte-ombre : 0 px  4 px  30 px  rgba ( 19 ,  127 ,  212 ,  0.7 );
+}
+
+. profile-card-social__item . instagram {
+    arrière - plan : gradient linéaire ( 45 degrés ,  # 405de6 ,  # 5851db ,  # 833ab4 ,  # c13584 ,  # e1306c ,  # fd1d1d );
+    boîte-ombre : 0 px  4 px  30 px  rgba ( 120 ,  64 ,  190 ,  0,6 );
+}
+
+. profile-card-social__item . behance {
+    arrière - plan : gradient linéaire ( 45 degrés ,  # 1769ff ,  # 213fca );
+    boîte-ombre : 0 px  4 px  30 px  rgba ( 27 ,  86 ,  231 ,  0.7 );
+}
+
+. profile-card-social__item . github {
+    arrière - plan : gradient linéaire ( 45 degrés ,  # 333333 ,  # 626b73 );
+    boîte-ombre : 0 px  4 px  30 px  rgba ( 63 ,  65 ,  67 ,  0,6 );
+}
+
+. profile-card-social__item . codepen {
+    arrière - plan : gradient linéaire ( 45 degrés ,  # 324e63 ,  # 414447 );
+    boîte-ombre : 0 px  4 px  30 px  rgba ( 55 ,  75 ,  90 ,  0,6 );
+}
+
+. profile-card-social__item . lien {
+    arrière - plan : gradient linéaire ( 45 degrés ,  # d5135a ,  # f05924 );
+    boîte-ombre : 0 px  4 px  30 px  rgba ( 223 ,  45 ,  70 ,  0,6 );
+}
+
+. carte-profil-social . icon-font {
+    affichage : inline-flex;
+}
+
+. profile-card-ctr {
+    affichage : flex;
+    justify-content : centre;
+    align-items : centre;
+    marge supérieure : 40 px ;
+}
+
+@ écran multimédia et ( largeur max : 576 px ) {
+    . profile-card-ctr {
+        flex-wrap : enveloppement;
+    }
+}
+
+. profile-card__button {
+    arrière - plan : aucun;
+    bordure : aucune;
+    famille de polices : 'Quicksand' , sans-serif;
+    poids de la police : 700 ;
+    taille de la police : 19 px ;
+    marge : 15 px  35 px ;
+    rembourrage : 15 px  40 px ;
+    largeur min : 201 px ;
+    rayon de la bordure : 50 px ;
+    hauteur min : 55 px ;
+    couleur : # fff ;
+    curseur : pointeur;
+    Visibilité de la face arrière: cachée;
+    transition : toutes les 0,3 s ;
+}
+
+@ écran multimédia et ( largeur max : 768 px ) {
+    . profile-card__button {
+        largeur min : 170 px ;
+        marge : 15 px  25 px ;
+    }
+}
+
+@ écran multimédia et ( largeur max : 576 px ) {
+    . profile-card__button {
+        largeur min : hériter;
+        marge : 0 ;
+        marge inférieure : 16 px ;
+        largeur : 100 % ;
+        largeur maximale : 300 px ;
+    }
+    . profile-card__button : dernier-enfant {
+        marge inférieure : 0 ;
+    }
+}
+
+. profile-card__button : focus {
+    aperçu : aucun ! important ;
+}
+
+@ écran multimédia et ( largeur min : 768 px ) {
+    . profile-card__button : hover {
+        transformer : translateY (-5px);
+    }
+}
+
+. profile-card__button : premier-enfant {
+    marge gauche : 0 ;
+}
+
+. profile-card__button : dernier-enfant {
+    marge droite : 0 ;
+}
+
+. Profile-card__button . bouton - bleu {
+    arrière - plan : gradient linéaire ( 45 degrés ,  # 1da1f2 ,  # 0e71c8 );
+    boîte-ombre : 0 px  4 px  30 px  rgba ( 19 ,  127 ,  212 ,  0.4 );
+}
+
+. Profile-card__button . bouton - bleu : survol {
+    boîte-ombre : 0 px  7 px  30 px  rgba ( 19 ,  127 ,  212 ,  0,75 );
+}
+
+. Profile-card__button . bouton - orange {
+    arrière - plan : gradient linéaire ( 45 degrés ,  # d5135a ,  # f05924 );
+    boîte-ombre : 0 px  4 px  30 px  rgba ( 223 ,  45 ,  70 ,  0,35 );
+}
+
+. Profile-card__button . bouton - orange : survoler {
+    boîte-ombre : 0 px  7 px  30 px  rgba ( 223 ,  45 ,  70 ,  0,75 );
+}
+
+. Profile-card__button . bouton - gris {
+    boîte-ombre : aucun;
+    arrière - plan : # dcdcdc ;
+    couleur : # 142029 ;
+}
+
+. message-carte-profil {
+    largeur : 100 % ;
+    hauteur : 100 % ;
+    position : absolue;
+    haut : 0 ;
+    gauche : 0 ;
+    haut du rembourrage : 130 px ;
+    padding-bottom : 100 px ;
+    opacité : 0 ;
+    événements de pointeur : aucun;
+    transition : toutes les 0,3 s ;
+}
+
+. profile-card-form {
+    boîte-ombre : 0  4 px  30 px  rgba ( 15 ,  22 ,  56 ,  0,35 );
+    largeur max : 80 % ;
+    marge gauche : auto;
+    marge droite : auto;
+    hauteur : 100 % ;
+    arrière - plan : # fff ;
+    rayon de la bordure : 10 px ;
+    rembourrage : 35 px ;
+    transformée : échelle ( 0,8 );
+    position : relative;
+    indice z : 3 ;
+    transition : toutes les 0,3 s ;
+}
+
+@ écran multimédia et ( largeur max : 768 px ) {
+    . profile-card-form {
+        largeur max : 90 % ;
+        hauteur : auto;
+    }
+}
+
+@ écran multimédia et ( largeur max : 576 px ) {
+    . profile-card-form {
+        rembourrage : 20 px ;
+    }
+}
+
+. profile-card-form__bottom {
+    justify-content : espace entre;
+    affichage : flex;
+}
+
+@ écran multimédia et ( largeur max : 576 px ) {
+    . profile-card-form__bottom {
+        flex-wrap : enveloppement;
+    }
+}
+
+. textarea de la carte de profil  {
+    largeur : 100 % ;
+    redimensionner : aucun;
+    hauteur : 210 px ;
+    marge inférieure : 20 px ;
+    bordure : 2 px solide # dcdcdc ;
+    rayon de la bordure : 10 px ;
+    rembourrage : 15 px  20 px ;
+    couleur : # 324e63 ;
+    poids de la police : 500 ;
+    famille de polices : 'Quicksand' , sans-serif;
+    contour : aucun;
+    transition : toutes les 0,3 s ;
+}
+
+. zone de  texte de la carte de profil : focus {
+    contour : aucun;
+    couleur de la bordure : # 8a979e ;
+}
+
+. profile-card__overlay {
+    largeur : 100 % ;
+    hauteur : 100 % ;
+    position : absolue;
+    haut : 0 ;
+    gauche : 0 ;
+    événements de pointeur : aucun;
+    opacité : 0 ;
+    arrière - plan : rgba ( 22 ,  33 ,  72 ,  0,35 );
+    rayon de la bordure : 12 px ;
+    transition : toutes les 0,3 s ;
+}

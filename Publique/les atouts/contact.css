@@ -1,0 +1,283 @@
+@import  url (https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+corps {
+    arrière - plan : url (images / fond.svg);
+    background-size : couverture;
+    padding-top : 100 px ;
+}
+
+. retour {
+
+    background-size : couverture;
+}
+
+formulaire {
+    marge gauche : auto;
+    marge droite : auto;
+    largeur : 343 px ;
+    hauteur : 333 px ;
+    rembourrage : 30 px ;
+    bordure : 1 px solide rgba ( 0 ,  0 ,  0 ,  .2 );
+    -moz-border-radius : 5 px ;
+    -webkit-border-radius : 5 px ;
+    rayon de la bordure : 5 px ;
+    -moz-background-clip : remplissage;
+    -webkit-background-clip : padding-box;
+    clip d'arrière-plan : padding-box;
+    arrière - plan : # DB6E82 ;
+    -moz-box-shadow : 0  0  13 px  3 px  rgba ( 0 ,  0 ,  0 ,  .5 );
+    -webkit-box-shadow : 0  0  13 px  3 px  rgba ( 0 ,  0 ,  0 ,  .5 );
+    boîte-ombre : 0  0  13 px  3 px  rgba ( 0 ,  0 ,  0 ,  .5 );
+    débordement : caché;
+}
+
+textarea {
+    arrière - plan : rgba ( 255 ,  255 ,  255 ,  0.4 ) url (http://luismruiz.com/img/gemicon_message.png) défilement sans répétition 16 px  16 px ;
+    largeur : 276 px ;
+    hauteur : 110 px ;
+    bordure : 1 px solide rgba ( 255 ,  255 ,  255 ,  .6 );
+    -moz-border-radius : 4 px ;
+    -webkit-border-radius : 4 px ;
+    rayon de la bordure : 4 px ;
+    -moz-background-clip : remplissage;
+    -webkit-background-clip : padding-box;
+    clip d'arrière-plan : padding-box;
+    affichage : bloc;
+    famille de polices : 'Source Sans Pro' , sans-serif;
+    taille de la police : 18 px ;
+    couleur : # fff ;
+    padding-left : 45 px ;
+    padding-right : 20 px ;
+    haut du rembourrage : 12 px ;
+    marge inférieure : 20 px ;
+    débordement : caché;
+}
+
+entrée {
+    largeur : 276 px ;
+    hauteur : 48 px ;
+    bordure : 1 px solide rgba ( 255 ,  255 ,  255 ,  .4 );
+    -moz-border-radius : 4 px ;
+    -webkit-border-radius : 4 px ;
+    rayon de la bordure : 4 px ;
+    -moz-background-clip : remplissage;
+    -webkit-background-clip : padding-box;
+    clip d'arrière-plan : padding-box;
+    affichage : bloc;
+    famille de polices : 'Source Sans Pro' , sans-serif;
+    taille de la police : 18 px ;
+    couleur : # fff ;
+    padding-left : 20 px ;
+    padding-right : 20 px ;
+    marge inférieure : 20 px ;
+}
+
+input [ type = submit ] {
+    curseur : pointeur;
+}
+
+entrée . nom {
+    arrière - plan : rgba ( 255 ,  255 ,  255 ,  0.4 ) url (http://luismruiz.com/img/gemicon_name.png) défilement sans répétition 16 px  16 px ;
+    padding-left : 45 px ;
+}
+
+entrée . email {
+    arrière - plan : rgba ( 255 ,  255 ,  255 ,  0.4 ) url (http://luismruiz.com/img/gemicon_email.png) défilement sans répétition 16 px  20 px ;
+    padding-left : 45 px ;
+}
+
+entrée . message {
+    arrière - plan : rgba ( 255 ,  255 ,  255 ,  0.4 ) url (http://luismruiz.com/img/gemicon_message.png) défilement sans répétition 16 px  16 px ;
+    padding-left : 45 px ;
+}
+
+:: -webkit-input-placeholder {
+    couleur : # fff ;
+}
+
+: -moz-placeholder {
+    couleur : # fff ;
+}
+
+:: -moz-placeholder {
+    couleur : # fff ;
+}
+
+: -ms-input-placeholder {
+    couleur : # fff ;
+}
+
+entrée : focus ,
+textarea : focus {
+    couleur de fond : rgba ( 0 ,  0 ,  0 ,  0,2 );
+    -moz-box-shadow : 0  0  5 px  1 px  rgba ( 255 ,  255 ,  255 ,  .5 );
+    -webkit-box-shadow : 0  0  5 px  1 px  rgba ( 255 ,  255 ,  255 ,  .5 );
+    boîte-ombre : 0  0  5 px  1 px  rgba ( 255 ,  255 ,  255 ,  .5 );
+    débordement : caché;
+}
+
+. btn {
+    largeur : 138 px ;
+    hauteur : 44 px ;
+    -moz-border-radius : 4 px ;
+    -webkit-border-radius : 4 px ;
+    rayon de la bordure : 4 px ;
+    float : droite;
+    bordure : 1 px solide # 253737 ;
+    arrière - plan : # 416b68 ;
+    arrière - plan : -webkit-gradient (linéaire , supérieur gauche , inférieur gauche ,  à partir de ( # 6da5a3 ) ,  à ( # 416b68 ));
+    arrière - plan : -webkit-linear-gradient (top ,  # 6da5a3 ,  # 416b68 );
+    arrière - plan : -moz-linear-gradient (haut ,  # 6da5a3 ,  # 416b68 );
+    arrière - plan : -ms-linear-gradient (haut ,  # 6da5a3 ,  # 416b68 );
+    arrière - plan : -o-linear-gradient (top ,  # 6da5a3 ,  # 416b68 );
+    image de fond : -ms-linear-gradient (top ,  # 6da5a3  0 % ,  # 416b68  100 % );
+    rembourrage : 10,5 px  21 px ;
+    -webkit-border-radius : 6 px ;
+    -moz-border-radius : 6 px ;
+    rayon de la bordure : 6 px ;
+    -webkit-box-shadow : rgba ( 255 ,  255 ,  255 ,  0,1 ) 0  1 px  0 , insert rgba ( 255 ,  255 ,  255 ,  0,7 ) 0  1 px  0 ;
+    -moz-box-shadow : rgba ( 255 ,  255 ,  255 ,  0,1 ) 0  1 px  0 , insert rgba ( 255 ,  255 ,  255 ,  0,7 ) 0  1 px  0 ;
+    boîte-ombre : rgba ( 255 ,  255 ,  255 ,  0,1 ) 0  1 px  0 , insert rgba ( 255 ,  255 ,  255 ,  0,7 ) 0  1 px  0 ;
+    ombre de texte : # 333333  0  1 px  0 ;
+    couleur : # e1e1e1 ;
+}
+
+. btn : hover {
+    bordure : 1 px solide # 253737 ;
+    ombre de texte : # 333333  0  1 px  0 ;
+    arrière - plan : # 416b68 ;
+    arrière - plan : -webkit-gradient (linéaire , supérieur gauche , inférieur gauche ,  à partir de ( # 77b2b0 ) ,  à ( # 416b68 ));
+    arrière - plan : -webkit-linear-gradient (haut ,  # 77b2b0 ,  # 416b68 );
+    arrière - plan : -moz-linear-gradient (haut ,  # 77b2b0 ,  # 416b68 );
+    arrière - plan : -ms-linear-gradient (haut ,  # 77b2b0 ,  # 416b68 );
+    arrière - plan : -o-linear-gradient (haut ,  # 77b2b0 ,  # 416b68 );
+    image de fond : -ms-linear-gradient (top ,  # 77b2b0  0 % ,  # 416b68  100 % );
+    couleur : # fff ;
+}
+
+. btn : actif {
+    margin-top : 1 px ;
+    text-shadow : # 333333  0 -1px 0 ;
+    bordure : 1 px solide # 253737 ;
+    arrière - plan : # 6da5a3 ;
+    arrière - plan : -webkit-gradient (linéaire , supérieur gauche , inférieur gauche ,  à partir de ( # 416b68 ) ,  à ( # 416b68 ));
+    arrière - plan : -webkit-linear-gradient (top ,  # 416b68 ,  # 609391 );
+    arrière - plan : -moz-linear-gradient (haut ,  # 416b68 ,  # 6da5a3 );
+    arrière - plan : -ms-linear-gradient (haut ,  # 416b68 ,  # 6da5a3 );
+    arrière - plan : -o-linear-gradient (haut ,  # 416b68 ,  # 6da5a3 );
+    image de fond : -ms-linear-gradient (haut ,  # 416b68  0 % ,  # 6da5a3  100 % );
+    couleur : # fff ;
+    -webkit-box-shadow : rgba ( 255 ,  255 ,  255 ,  0 ) 0  1 px  0 , insert rgba ( 255 ,  255 ,  255 ,  0.7 ) 0  1 px  0 ;
+    -moz-box-shadow : rgba ( 255 ,  255 ,  255 ,  0 ) 0  1 px  0 , insert rgba ( 255 ,  255 ,  255 ,  0.7 ) 0  1 px  0 ;
+    box-shadow : rgba ( 255 ,  255 ,  255 ,  0 ) 0  1 px  0 , insert rgba ( 255 ,  255 ,  255 ,  0.7 ) 0  1 px  0 ;
+}
+
+div {
+    affichage : bloc en ligne;
+    position : absolue;
+    haut : 55 % ;
+    gauche : 50 % ;
+    -ms-transform : traduire ( -50 % ,  -50 % );
+    -webkit-transform : traduire ( -50 % ,  -50 % );
+    transformer : traduire ( -50 % ,  -50 % );
+}
+
+
+/* Icônes */
+
+a {
+    couleur : # fff ;
+    arrière - plan : # DB6E82 ;
+    rayon de la bordure : 4 px ;
+    text-align : centre;
+    texte-décoration : aucun;
+    font-family : fontawesome;
+    position : relative;
+    affichage : bloc en ligne;
+    largeur : 40 px ;
+    hauteur : 28 px ;
+    haut du rembourrage : 12 px ;
+    marge : 0  2 px ;
+    -o-transition : toutes les 0,5 s ;
+    -webkit-transition : toutes les 0,5 s ;
+    -moz-transition : toutes les 0,5 s ;
+    transition : toutes les 0,5 s ;
+    -webkit-font-smoothing : anti - crénelage;
+}
+
+a : hover {
+    arrière - plan : # ef92a3 ;
+}
+
+
+/ * texte contextuel * /
+
+un  span {
+    couleur : # 666 ;
+    position : absolue;
+    famille de polices : sans-serif;
+    bas : 0 ;
+    gauche : -25px;
+    à droite : -25px;
+    rembourrage : 5 px  7 px ;
+    indice z : -1 ;
+    taille de la police : 14 px ;
+    rayon de la bordure : 2 px ;
+    arrière - plan : # fff ;
+    visibilité : cachée;
+    opacité : 0 ;
+    -o-transition : tous les 0,5 s  cubique-bezier ( 0,68 ,  -0,55 ,  0,265 ,  1,55 );
+    -webkit-transition : tous les 0,5 s  cubique-bezier ( 0,68 ,  -0,55 ,  0,265 ,  1,55 );
+    -moz-transition : tous les 0,5 s  cubique-bezier ( 0,68 ,  -0,55 ,  0,265 ,  1,55 );
+    transition : tous les 0,5 s  cubique-bezier ( 0,68 ,  -0,55 ,  0,265 ,  1,55 );
+}
+
+
+/ * flèche de texte contextuel * /
+
+une  durée : avant {
+    contenu : '' ;
+    largeur : 0 ;
+    hauteur : 0 ;
+    bordure gauche : 5 px solide transparent;
+    bordure droite : 5 px solide transparent;
+    border-top : 5 px solide # fff ;
+    position : absolue;
+    bas : -5px;
+    gauche : 40 px ;
+}
+
+
+/ * le texte apparaît lorsque l'icône est en état de survol * /
+
+a : hover  span {
+    bas : 50 px ;
+    visibilité : visible;
+    opacité : 1 ;
+}
+
+
+/ * font des icônes géniales * /
+
+a : nième de type ( 1 ): avant {
+    contenu : '\ f09a' ;
+}
+
+a : nième de type ( 2 ): avant {
+    contenu : '\ f099' ;
+}
+
+a : nième de type ( 3 ): avant {
+    contenu : '\ f0d5' ;
+}
+
+a : nième de type ( 4 ): avant {
+    contenu : '\ f113' ;
+}
+
+a : nième de type ( 5 ): avant {
+    contenu : '\ f17d' ;
+}
+
+a : nième de type ( 6 ): avant {
+    contenu : '\ f1cb' ;
+}

@@ -1,0 +1,62 @@
+corps {
+	background : URL de la zone de contenu (https://image.noelshack.com/fichiers/2020/07/1/1581323637-web-1920-14.jpg);
+	background-attachment : faire défiler;
+	background-size : couverture;
+}
+
+
+formulaire {
+	/ * margin-top: 50px;
+	affichage: flex;
+	flex-direction: ligne; * /
+
+}
+
+. logo {
+	affichage : flex;
+	justify-content : centre;
+	
+}
+
+. image  img {
+	bordure : 1 px noir uni;
+}
+
+. image {
+	affichage : flex;
+	justify-content : centre;
+	margin-top : 60 px ;
+	justify-content : espace autour;
+}
+
+. form-row {
+	marge : 20 px  0 ;
+}
+
+. cellule-vertical {
+	affichage : flex;
+	flex-direction : colonne;
+}
+
+
+. form-control {
+	couleur : noir;
+	couleur d'arrière-plan : # CCE5EB ;
+	bordure : 1 px solide # CCE5EB ;
+}
+
+label {
+	couleur : noir;
+	famille de polices : ubuntu;
+}
+
+. sélection personnalisée {
+	couleur : noir;
+	couleur d'arrière-plan : # CCE5EB ;
+	bordure : 1 px solide # CCE5EB ;
+}
+
+. btn-primaire {
+	couleur de fond : # D23E79 ;
+
+}

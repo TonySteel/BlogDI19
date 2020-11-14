@@ -1,0 +1,58 @@
+corps {
+    marge : 0 ;
+    rembourrage : 0 ;
+    famille de polices : 'Source Sans Pro' , sans-serif;
+    arrière - plan : aucun;
+}
+
+nav {
+    hauteur : 100 px ;
+    margin-top : 0 px ;
+}
+
+. menu {
+    position : relative;
+    marge : 0 auto;
+    largeur : 138 % ;
+    débordement : caché;
+    arrière - plan : aucun;
+}
+
+. menu  ul {
+    largeur : 100 % ;
+    marge : 40 px ;
+    padding-right : 0 ;
+    affichage : flex;
+    justify-content : espace entre;
+}
+
+. menu  ul  li {
+    style liste : aucun;
+}
+
+. menu  ul  li ,
+. menu  ul  li  a {
+    couleur : # DE4858 ;
+    hauteur de ligne : 44 px ;
+    marge gauche : 44 px ;
+    texte-décoration : aucun;
+}
+
+. menu  ul  li  a . fa . fa-user-circle-o {
+    taille de la police : 35 px ;
+}
+
+. menu  ul  li  a . fa . fa-enveloppe {
+    taille de la police : 35 px ;
+    marge droite : 1 em ;
+}
+
+. fa-user-circle-o : avant {
+    contenu : "\ f2be" ;
+    marge gauche : 18 px ;
+}
+
+. fa-enveloppe : avant {
+    contenu : "\ f0e0" ;
+    marge droite : 26 em ;
+}

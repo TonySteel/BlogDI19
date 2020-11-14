@@ -1,0 +1,61 @@
+. btn-success {
+    couleur d'arrière-plan : # 246F34 ;
+    couleur de la bordure : # 246F34 ;
+}
+
+. btn-warning {
+    couleur d'arrière-plan : # 264480 ;
+    couleur de la bordure : # 264480 ;
+    couleur : blanc;
+}
+
+. jumbotron {
+    background : url (background.jpg);
+    couleur : blanc;
+}
+
+. bg-dark {
+    couleur de fond : blanc antique;
+}
+
+. btn-outline-success {
+    couleur : # 343a40 ;
+    couleur d'arrière-plan : # C0C7D9 ;
+    couleur de la bordure : # C0C7D9 ;
+}
+
+. btn-outline-success : hover {
+    couleur d'arrière-plan : # 343a40 ;
+    couleur : blanc;
+    couleur de la bordure : # FFFFFF ;
+}
+
+. navbar-sombre . navbar-nav . nav-link {
+    couleur : blanc;
+}
+
+. navbar {
+    rembourrage : 1 rem  3 rem ;
+}
+
+. bg-light {
+    couleur d'arrière-plan : # cebd9f  ! important ;
+}
+
+corps {
+    couleur de fond : # cebd9f ;
+}
+
+. form-control {
+    arrière - plan : aucun;
+    couleur de la bordure : # 293133 ;
+}
+
+. form-control : hover {
+    couleur de la bordure : # 343a40 ;
+}
+
+entrée {
+    arrière - plan : aucun;
+    couleur de la bordure : # 343a40 ;
+}

@@ -1,0 +1,163 @@
+/ * Menu Burger * /
+
+@import  url ( 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400' );
+html {
+    arrière - plan : couverture;
+}
+
+corps {
+    marge : 0 ;
+    rembourrage : 0 ;
+    famille de polices : 'Source Sans Pro' , sans-serif;
+    arrière - plan : aucun;
+}
+
+nav {
+    hauteur : 44 px ;
+    marge supérieure : 33 px ;
+    couleur : noir;
+}
+
+. menu {
+    position : relative;
+    marge : 0 auto;
+    largeur : 100 % ;
+    débordement : caché;
+}
+
+. menu  ul {
+    largeur : 100 % ;
+    marge : 0 ;
+    padding-right : 0 ;
+    affichage : flex;
+    justify-content : espace entre;
+}
+
+. menu  ul  li {
+    style liste : aucun;
+}
+
+. menu  ul  li ,
+. menu  ul  li  a {
+    couleur : # 000 ;
+    hauteur de ligne : 44 px ;
+    texte-décoration : aucun;
+}
+
+. menu  ul  li  a . fa . fa-user-circle-o {
+    taille de la police : 35 px ;
+}
+
+. menu  ul  li  a . fa . fa-enveloppe {
+    taille de la police : 35 px ;
+    marge droite : 1 em ;
+}
+
+. logo {
+    text-transform : majuscule;
+    poids de la police : gras;
+    taille de la police : 24 px ;
+}
+
+
+/ * Fin Menu Burger * /
+
+
+/ * Logo au milieu * /
+
+. logo1 {
+    largeur : 80 px ;
+    hauteur : 80 px ;
+    rembourrage gauche : 50 % ;
+    rembourrage supérieur : 10 % ;
+}
+
+
+/ * Fin Logo au milieu * /
+
+
+/ * Nom utilisateur * /
+
+. utname {
+    couleur : # D23E79 ;
+    famille de polices : 'Ubuntu' , sans-serif;
+    taille de la police : 50 px ;
+    text-align : centre;
+    rembourrage supérieur : 4 % ;
+}
+
+
+/ * Fin Nom utilisateur * /
+
+
+/ * Politique de confidentialité * /
+
+. titre {
+    couleur : # D23E79 ;
+    famille de polices : 'Ubuntu' , sans-serif;
+    taille de la police : 25 px ;
+    text-align : centre;
+}
+
+. blabla ,
+. liste {
+    couleur : noir;
+    famille de polices : 'Ubuntu' , sans-serif;
+    taille de la police : 15 px ;
+}
+
+. soustitre {
+    couleur : # D23E79 ;
+    famille de polices : 'Ubuntu' , sans-serif;
+    taille de la police : 20 px ;
+    affichage : flex;
+    flex-direction : ligne;
+}
+
+. date {
+    couleur : # D23E79 ;
+    famille de polices : 'Ubuntu' , sans-serif;
+    taille de la police : 10 px ;
+    affichage : flex;
+    flex-direction : ligne;
+}
+
+. prog {
+    couleur : # D23E79 ;
+    famille de polices : 'Ubuntu' , sans-serif;
+    taille de la police : 25 px ;
+    affichage : flex;
+    flex-direction : ligne;
+}
+
+. ssttr {
+    couleur : # D23E79 ;
+    famille de polices : 'Ubuntu' , sans-serif , italic;
+    taille de la police : 15 px ;
+    affichage : flex;
+    flex-direction : ligne;
+}
+
+. abc {
+    couleur : # D23E79 ;
+    famille de polices : 'Ubuntu' , sans-serif;
+    taille de la police : 20 px ;
+    affichage : flex;
+    flex-direction : ligne;
+}
+
+. iii {
+    couleur : # D23E79 ;
+    famille de polices : 'Ubuntu' , sans-serif;
+    taille de la police : 15 px ;
+    affichage : flex;
+    flex-direction : ligne;
+}
+
+. expl {
+    couleur : # D23E79 ;
+    famille de polices : 'Ubuntu' , sans-serif;
+    taille de la police : 15 px ;
+    affichage : flex;
+    flex-direction : ligne;
+}
