@@ -1,0 +1,44 @@
+{% Étend  " /Article/Accueil.html.twig " %}
+{% block  title %} Validation utilisateur {% endblock %}
+
+{% block  body %}
+
+    < nav >
+        < div  class = " menu " >
+            < ul >
+
+                < li >
+                    < Une  classe = " menu déroulant items "  href = " / accueil " > < img  src = " /uploads/images/logo.png " > </ a >
+                </ li >
+            </ ul >
+        </ div >
+    </ nav >
+    </ br > </ br > </ br > </ br >
+    < table  class = " table table-striped " >
+    < thead >
+    < tr >
+        < th  scope = " col " > Id </ th >
+        < th  scope = " col " > Nom </ th >
+        < th  scope = " col " > Prenom </ th >
+    </ tr >
+    </ thead >
+    < tbody >
+    {% pour l'  utilisateur  dans  utilisateurlist %}
+
+        < tr >
+            <! - . <Th scope = "ligne"> <a utilisateur href="/User/ValiderUtilisateur/{{ id }}"> # {{ utilisateur . id }} </a> </th> ->
+            < td > {{ Utilisateur . USER_ID }} </ td >
+            < td > {{ Utilisateur . USER_NOM }} </ td >
+            < td > {{ Utilisateur . USER_PRENOM }} </ td >
+            < td >
+                < div  class = " btn-group "  role = " group "  aria-label = " Exemple de base " >
+                    < A  class = " BTN BTN-succès "  href = " / Utilisateur / ValUtilisateur / {{ Utilisateur . USER_ID }} " > < i  class = " fas fa-check-cercle " > </ i > </ a >
+                    < A  class = " BTN BTN-danger "  href = " / Utilisateur / delUtilisateur / {{ Utilisateur . USER_ID }} " > < i  class = " fas fa fois-cercle " > </ i > </ a >
+                </ div >
+            </ td >
+        </ tr >
+
+    {% endfor %}
+    </ tbody >
+
+{% endblock %}

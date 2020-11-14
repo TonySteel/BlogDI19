@@ -1,0 +1,92 @@
+<! DOCTYPE html>
+
+< html  lang = " en " >
+
+< tête >
+
+    < meta  charset = " UTF-8 " >
+
+    < titre > -Inscription - </ titre >
+
+    < link  rel = " stylesheet "  href = " https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css " >
+
+    < link  rel = " stylesheet "  href = " /assets/styleconnexion.css " >
+    < link  rel = " icon "  href = " /uploads/images/favicon.ico " />
+
+</ tête >
+
+{% block  body %}
+    </ a > </ div >
+    < div  class = " content " >
+        < div  class = " container " >
+            < p > {{ session . errinscription }} </ p >
+            < div  class = " menu " >
+                < A  href = " connexion "  class = " actif BTN-ENREGISTRER " >
+                    < h2 > Se Connecter </ h2 >
+                </ a >
+                < A  href = " inscription "  class = " BTN-connexion " > </ a >
+                    < h2 > S'inscrire </ h2 >
+                </ a >
+            </ div >
+
+
+            < div  class = " enregistrer " >
+                < form  name = " inscription "  class = " contact-form "  method = " post "  enctype = " multipart / form-data " >
+
+                    < div  class = " form-group row " >
+                        < étiquette > Nom </ étiquette >
+                        < input  name = " nom "  placeholder = " "  type = " text "  class = " form-control "  requis >
+                    </ div >
+                    < div  class = " form-group row " >
+                        < label > Prénom </ label >
+                        < input  name = " prenom "  placeholder = " "  type = " text "  class = " form-control "  requis >
+                    </ div >
+                    < div  class = " form-group row " >
+                        < label > E-mail </ label >
+                        < input  name = " email "  placeholder = " "  type = " text "  class = " form-control "  requis
+                               motif = " ^ (([- \ w \ d] +) (\. [- \ w \ d] +) * @ ([- \ w \ d] +) (\. [- \ w \ d] + ) * (\. ([a-zA-Z] {2,5} | [\ d] {1,3})) {1,2}) $ " >
+                    </ div >
+                    < div  class = " form-group row " >
+                        < label > Mot de passe </ label >
+                        < input  name = " password "  placeholder = " "  type = " password "  class = " form-control "  requis >
+                    </ div >
+                    < div  class = " form-group row " >
+                        < label > Confirmation de mot de passe </ label >
+                        < input  name = " password2 "  placeholder = " "  type = " password "  class = " form-control "  requis >
+                    </ div >
+                    < div  class = " check " >
+
+                        < étiquette >
+                            < input  id = " check "  type = " checkbox "  class = " checkbox "  requis
+                                   aria-required = " true " >
+                            < svg  xmlns = " http://www.w3.org/2000/svg "  width = " 26px "  height = " 23px " >
+                                < path  class = " chemin de retour "
+                                      d = " M1.5,6.021V2.451C1.5,2.009,1.646,1.5,2.3,1.5h18.4c0.442,0,0.8,0.358,0.8,0.801v18.398c0,0.442-0.357,0.801-0.8, 0.801H2.3c-0.442,0-0.8-0.358-0.8-0.801V6 " >
+                                </ chemin >
+
+                                < path  class = " déplacement de chemin "
+                                      d = " M24.192,3.813L11.818,16.188L1.5,6.021V2.451C1.5,2.009,1.646,1.5,2.3,1.5h18.4c0.442,0,0.8,0.358,0.8,0.801v18. 398c0,0.442-0.357,0.801-0.8,0.801H2.3c-0.442,0-0.8-0.358-0.8-0.801V6 " >
+                                </ chemin >
+                            </ svg >
+                        </ label >
+
+                        < h3 > J'accepte les conditions d'utilisation </ h3 >
+
+                    </ div >
+
+                    < input  class = " submit "  value = " S'inscrire "  type = " submit " >
+
+                </ form >
+
+            </ div >
+
+        </ div >
+
+    </ div >
+
+{% endblock %}
+
+
+
+
+</ html >

@@ -1,0 +1,114 @@
+<! doctype html>
+< html  lang = " fr " >
+< tête >
+    < meta  charset = " utf-8 " >
+    < Title > {% bloc  titre %} {% PULLUP endblock %} </ title >
+    < meta  name = " viewport "  content = " width: device-width, initial-scale = 1.0 " >
+    < link  rel = " stylesheet "  type = " text / css "  href = " https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css " >
+    < link  rel = " stylesheet "  type = " text / css "  href = " https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css " >
+    < link  rel = " stylesheet "  type = " text / css "  href = " https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css " >
+    < link  rel = " stylesheet "  type = " text / css "  href = " https://cdnjs.cloudflare.com/ajax/libs/lity/2.1.1/lity.min.css " >
+    < link  rel = " stylesheet "  type = " text / css "  href = " /assets/styles.css " >
+    < link  rel = " stylesheet "  type = " text / css "  href = " /assets/responsive.css " >
+    < link  rel = " icon "  href = " /uploads/images/favicon.ico " />
+    < script  src = " https://use.typekit.net/bdw7xbl.js " > </ script >
+    < script >
+        essayez {
+            Typekit . charge ({
+                asynchrone :  vrai
+            });
+        } catch (e) {}
+    </ script >
+{% block  css %} {% endblock %}
+
+</ tête >
+< corps >
+
+    < section  class = " banner clearfix " >
+        < div  class = " overlay " > </ div >
+        < header  class = " top_header clearfix " >
+            < nav >
+                < A  href = " / inscription "  class = " pop - up " > Connexion / Inscription </ a >
+                < ul >
+                    < li  class = " active " >
+                        < A  href = " # " >
+                            < img  src = " /assets/images/fr.png "  alt = " English "  title = " English " > < span > FR </ span >
+                        </ a >
+                    </ li >
+                </ ul >
+            </ nav >
+        </ header >
+
+        < div  class = " intro clearfix " >
+            < div  class = " wrapper " >
+                < h1 >
+                    < Br >
+                    < img  src = " /assets/images/logo.svg "  alt = " Pullup Social "  title = " Pullup Social " >
+                </ h1 >
+                < p > Donnez-moi un objectif! </ p >
+
+                < div  class = " download_mobile_apps_buttons " >
+                    < A  href = " # "  class = " bouton " >
+                        < img  src = " /assets/images/appstore.png "  alt = " Télécharger l'application iOS "  title = " Télécharger l'application iOS " >
+                    </ a >
+                    < A  href = " # "  class = " bouton " >
+                        < img  src = " /assets/images/playstore.png "  alt = " Télécharger l'application Android "  title = " Télécharger l'application Android " >
+                    </ a >
+                </ div >
+            </ div >
+        </ div >
+
+    </ section >
+    <! - FIN Bannière ->
+
+    <! - Pied de page ->
+    < footer  class = " footer clearfix " >
+        < div  class = " footer_column " >
+            < h3 > Téléchargement </ h3 >
+            < ul >
+                < Li > < a  href = " # " > iOS verser Téléchargement </ a > </ li >
+                < Li > < a  href = " # " > Android verser Téléchargement </ a > </ li >
+            </ ul >
+        </ div >
+        < div  class = " footer_column " >
+            < h3 > Communauté </ h3 >
+            < ul >
+                < Li > < a  href = " # " > Blog </ a > </ li >
+                < Li > < a  href = " # " > Technologie </ a > </ li >
+                < Li > < a  href = " # " > Support </ a > </ li >
+            </ ul >
+        </ div >
+        < div  class = " footer_column " >
+            < h3 > Compagnie </ h3 >
+            < ul >
+                < Li > < a  href = " # " > Equipe </ a > </ li >
+                < Li > < a  href = " / contact " > Contact </ a > </ li >
+            </ ul >
+        </ div >
+        < div  class = " footer_column " >
+            < h3 > Partenaires </ h3 >
+            < ul >
+                < Li > < a  href = " # " > Cesi ALTERNANCE </ a > </ li >
+                < Li > < a  href = " # " > Rencontre1Bof.com </ a > </ li >
+            </ ul >
+        </ div >
+        < div  class = " footer_column " >
+            < h3 > Légal </ h3 >
+            < ul >
+                < Li > < a  href = " / état " > Conditions Generales </ a > </ li >
+            </ ul >
+        </ div >
+    </ footer >
+{% block  body %} {% endblock %}
+    <! - FIN Pied de page ->
+    <! - jQuery ->
+    < script  src = " https://code.jquery.com/jquery.min.js " > </ script >
+    <! - Magnifique Popup ->
+    < script  src = " https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js " > </ script >
+    <! - Lity ->
+    < script  src = " https://cdnjs.cloudflare.com/ajax/libs/lity/2.1.1/lity.min.js " > </ script >
+
+{% block  javascript %} {% endblock %}
+
+</ corps >
+</ html >

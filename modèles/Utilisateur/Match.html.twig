@@ -1,0 +1,47 @@
+{% Étend  " /Article/Accueil.html.twig " %}
+{% block  title %} Liste utilisateur {% endblock %}
+{% Étend  " /Article/Accueil.html.twig " %}
+{% block  title %} Validation utilisateur {% endblock %}
+
+{% block  body %}
+
+    < nav >
+        < div  class = " menu " >
+            < ul >
+
+                < li >
+                    < Une  classe = " menu déroulant items "  href = " / accueil " > < img  src = " /uploads/images/logo.png " > </ a >
+                </ li >
+            </ ul >
+        </ div >
+    </ nav >
+    </ br > </ br > </ br > </ br >
+    < table  class = " table table-striped " >
+    < thead >
+    < tr >
+        < th  scope = " col " > Nom </ th >
+        < th  scope = " col " > Prenom </ th >
+        < th  scope = " col " > Projet </ th >
+    </ tr >
+    </ thead >
+    < tbody >
+    {% pour l'  utilisateur  dans  utilisateurlist %}
+
+        < tr >
+            < td > {{ Utilisateur . USER_NOM }} </ td >
+            < td > {{ Utilisateur . USER_PRENOM }} </ td >
+            < td > {{ Utilisateur . USER_PROJET }} </ td >
+            < td >
+
+                < div  class = " btn-group "  role = " group "  aria-label = " Exemple de base " >
+                    < A  class = " BTN BTN-succès "  href = " / Utilisateur / listMatch / {{ Utilisateur . USER_ID }} " > Comme </ a >
+                    < A  class = " BTN BTN-danger "  href = " / accueil " > Dislike </ a >
+                </ div >
+            </ td >
+
+        </ tr >
+
+    {% endfor %}
+    </ tbody >
+
+{% endblock %}

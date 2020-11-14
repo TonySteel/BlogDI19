@@ -1,0 +1,237 @@
+<! DOCTYPE html>
+< html  lang = " fr " >
+< tête >
+    < meta  charset = " utf-8 " >
+    < Title > {% bloc  titre %} {% BlogBooks endblock %} </ title >
+    < meta  http-equiv = " X-UA-Compatible "  content = " ie = edge " >
+    < meta  name = " viewport "  content = " width = device-width, initial-scale = 1 " >
+    < script  src = " https://code.jquery.com/jquery-3.4.1.slim.min.js "
+            intégrité = " sha384-J6qa4849blE2 + poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ + n "
+            crossorigin = " anonymous " > </ script >
+    < script  src = " https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "
+            intégrité = " sha384-Q6E9RHvbIyZFJoft + 2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo "
+            crossorigin = " anonymous " > </ script >
+    < script  src = " https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js "
+            intégrité = " sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 "
+            crossorigin = " anonymous " > </ script >
+    < link  rel = " stylesheet "  href = " https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css "
+          intégrité = " sha384-Vkoo8x4CGsO3 + Hhxv8T / Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh "  crossorigin = " anonyme " >
+    < title > Tirez vers le haut </ title >
+    < link  rel = " stylesheet "  href = " /assets/edit.css " >
+    < link  rel = " icon "  href = " /uploads/images/favicon.ico " />
+    {% block  css %} {% endblock %}
+</ tête >
+< corps >
+
+< div  class = " logo " >
+    < A  href = " / accueil " > < img  src = " /uploads/images/logo.png "  class = " bloc d mx-auto arrondi "  alt = " ... "
+                                       style = " hauteur: 70px; " > </ a >
+</ div >
+
+
+< centre >
+    < form  method = " post "  class = " container "
+          enctype = " multipart / form-data "  novalidate >
+
+        {% if  article . ImageFileName  ! =  ' '  Et     file_exist ( ' ./uploads/images/ ' ~ article.ImageRepository ~ ' / ' ~ article. ImageFileName )%}
+            < img  class = ' card-img-top '  alt = ' Article '
+                 src = ' / uploads / images / {{ article . ImageRepository }} / {{ article . ImageFileName }} ' />
+        {% else %}
+
+            < h6  class = " display-4 " > < img  src = " /uploads/images/18404253_10208853500390567_4427579252194182369_o.jpg "  height = " 200px " > </ h6 >
+        {% endif %}
+        < div  class = " custom-file " >
+            < input  type = " file "  class = " form-control-file custom-file-input "  name = " image "  id = " inputFile " >
+            < label  class = " custom-file-label "  for = " inputGroupFile01 " > </ label >
+        </ div >
+        < div  class = " row form-row " >
+            < div  class = " col-md-4 mb-3 " >
+                < label  for = " validationCustom01 " > Nom </ label >
+                < input  type = " text "  class = " form-control "  name = " nom "  required  value = " {{ utilisateur . USER_NOM }} " >
+                < div  class = " valid-feedback " >
+                </ div >
+
+            </ div >
+            < div  class = " col-md-4 mb-3 " >
+                < label  for = " validationCustom02 " > Prenom </ label >
+                < input  type = " text "  class = " form-control "  name = " prenom "  value = " {{ utilisateur . USER_PRENOM }} "  requis >
+                < div  class = " valid-feedback " >
+
+                </ div >
+            </ div >
+
+
+            < div  class = " col-md-4 mb-3 " >
+                < label  for = " validationCustomUsername " > age </ label >
+                < div  class = " input-group " >
+                    < div  class = " input-group-prepend " >
+                        < span  class = " input-group-text " > </ span >
+                    </ div >
+                    < input  name = " age "  type = " text "  class = " form-control "  id = " validationCustomUsername "
+                           aria-describedby = " inputGroupPrepend "  value = " {{ utilisateur . USER_AGE }} "  requis >
+                    < div  class = " invalid-feedback " >
+
+                    </ div >
+                </ div >
+            </ div >
+        </ div >
+
+        < div  class = " row form-row " >
+            < div  class = " col-md-6 mb-3 " >
+                < label  for = " validationCustom03 " > Ville </ label >
+                < input  type = " text "  class = " form-control "  name = " ville "  value = " {{ utilisateur . USER_VILLE }} "  requis >
+                < div  class = " invalid-feedback " >
+
+                </ div >
+            </ div >
+            < div  class = " col-md-6 mb-3 cellule-vertical " >
+                < label  for = " validationCustom04 " > Sexe </ label >
+                < select  class = " form-control "  name = " sexe "  id = " validationCustom04 "  value = " {{ utilisateur . USER_SEXE }} "
+                        requis >
+                    < option  sélectionnée  désactivée  value = " " > ... </ option >
+                    < option > Homme </ option >
+                    < option > Femme </ option >
+                </ sélectionner >
+                < div  class = " invalid-feedback " >
+
+                </ div >
+            </ div >
+        </ div >
+
+        < div  class = " row form-row " >
+
+            < div  class = " col-md-4 mb-3 cellule-vertical " >
+                < label  for = " validationCustom04 " > Ton projet </ label >
+                < select  name = " projet "  class = " form-control "  id = " validationCustom04 "  value = " {{ utilisateur . USER_PROJET }} "
+                        requis >
+                    < option  sélectionnée  désactivée  value = " " > ... </ option >
+                    < option > Sport </ option >
+                    < option > Entreprise </ option >
+                    < option > Régime </ option >
+                    < option > Voyage </ option >
+                    < option > Découverte </ option >
+                    < option > Apprentissage </ option >
+                    < option > Création </ option >
+                </ sélectionner >
+                < div  class = " invalid-feedback " >
+
+                </ div >
+            </ div >
+
+
+            < div  class = " col-md-8 mb-3 " >
+                < label  for = " validationCustom01 " > Décris ton projet </ label >
+                < input  class = " form-control "  name = " description "  rows = " 4 "  value = " {{ utilisateur . USER_DESC }} "  requis >
+                < div  class = " valid-feedback " >
+
+                </ div >
+            </ div >
+        </ div >
+
+        < div  class = " row form-row " >
+            < div  class = " col-md-4 mb-3 " >
+                < label  for = " validationCustom01 " > Centre d'interêt </ label >
+                < input  type = " text "  class = " form-control "  name = " center "  value = " {{ utilisateur . USER_CENTRE }} "  requis >
+                < div  class = " valid-feedback " >
+
+                </ div >
+            </ div >
+            < div  class = " col-md-4 mb-3 " >
+                < label  for = " validationCustom02 " > Profession </ label >
+                < input  type = " text "  class = " form-control "  name = " profession "  value = " {{ utilisateur . USER_PROFESSION }} "
+                       requis >
+                < div  class = " valid-feedback " >
+
+                </ div >
+            </ div >
+
+            < div  class = " col-md-4 mb-3 " >
+                < label  for = " validationCustom01 " > Parle nous de toi </ label >
+                < input  class = " form-control "  name = " moi "  value = " {{ utilisateur . USER_MOI }} "  requis >
+                < div  class = " valid-feedback " >
+
+                </ div >
+            </ div >
+
+            </ br > </ br > </ br > </ br > </ br >
+            < div  class = " col-md-4 mb-3 " >
+                < label  for = " validationCustom04 " > Situation </ label >
+                < select  class = " form-control "  name = " situation "  id = " validationCustom04 "
+                        value = " {{ utilisateur . USER_SITUATION }} "  obligatoire >
+                    < option  sélectionnée  désactivée  value = " " > ... </ option >
+                    < option > Celibataire </ option >
+                    < option > En couple </ option >
+                    < option > C'est compliqué </ option >
+                </ sélectionner >
+                < div  class = " invalid-feedback " >
+
+                </ div >
+            </ div >
+
+            < div  class = " col-md-4 mb-3 " >
+                < label  for = " validationCustom04 " > Je cherche </ label >
+                < select  class = " form-control "  name = " cherche "  id = " validationCustom04 "
+                        value = " {{ utilisateur . USER_CHERCHE }} "  obligatoire >
+                    < option  sélectionnée  désactivée  value = " " > ... </ option >
+                    < option > Un homme </ option >
+                    < option > Une femme </ option >
+                    < option > Peu importe </ option >
+                </ sélectionner >
+                < div  class = " invalid-feedback " >
+
+                </ div >
+            </ div >
+        </ div >
+
+        {% pour le  rôle  dans la  session . connexion . rôles %}
+            {% if  role  ==  ' administrateur ' %}
+
+                < div  class = " col-md-4 mb-3 " >
+                    < label  for = " validationCustom02 " > Rôle </ label >
+                    < input  type = " text "  class = " form-control "  name = " role "  value = " {{ utilisateur . USER_ROLE }} "  requis >
+                    < div  class = " valid-feedback " >
+
+                    </ div >
+                </ div >
+            {% endif %}
+        {% endfor %}
+
+      < button  class = " btn btn-primary mb-5 "  type = " submit " > Valider </ button >
+
+    </ form >
+
+
+</ center >
+
+< script >
+    // Exemple de JavaScript de démarrage pour désactiver les soumissions de formulaires s'il y a des champs non valides
+    ( fonction () {
+        ' use strict ' ;
+        fenêtre . addEventListener ( ' charger ' , fonction () {
+            // Récupère tous les formulaires auxquels nous voulons appliquer des styles de validation Bootstrap personnalisés
+            var formulaires =  document . getElementsByClassName ( ' besoins-validation ' );
+            // Boucle sur eux et empêche la soumission
+            var validation =  tableau . prototype . filtre . appel (formulaires, fonction ( formulaire ) {
+                forme . addEventListener ( ' soumettre ' , fonction ( événement ) {
+                    if ( form . checkValidity () ===  false ) {
+                        événement . preventDefault ();
+                        événement . stopPropagation ();
+                    }
+                    forme . classList . add ( 'a été validé ' );
+                }, faux );
+            });
+        }, faux );
+    }) ();
+</ script >
+{% block  body %} {% endblock %}
+< script  src = " https://code.jquery.com/jquery-3.4.0.min.js " > </ script >
+< script  src = " https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " > </ script >
+< script  src = " https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " > </ script >
+< script  src = " https://code.jquery.com/ui/1.12.1/jquery-ui.js " > </ script >
+< script  src = " https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.min.js " > </ script >
+< script  src = " https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js " > </ script >
+<! - <script type = "text / javascript" src = "/ public / assets / index.js"> </script> ->
+{% block  javascript %} {% endblock %}
+
+</ corps >
+</ html >

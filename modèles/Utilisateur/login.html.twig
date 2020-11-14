@@ -1,0 +1,110 @@
+<! DOCTYPE html>
+
+< html  lang = " fr " >
+
+
+
+
+< tête >
+
+    < meta  charset = " UTF-8 " >
+
+    < titre > Connexion </ titre >
+
+    < link  rel = " stylesheet "  href = " https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css " >
+
+    < link  rel = " stylesheet "  href = " /assets/styleconnexion.css " >
+    < link  rel = " icon "  href = " /uploads/images/favicon.ico " />
+</ tête >
+
+< body  id = " connexion " >
+
+</ a > </ div >
+
+< div  class = " content " >
+
+    < div  class = " container " >
+        < p  class = " perror " > {{ session . errorlogin }} </ p >
+
+
+        < div  class = " menu " >
+            < A  href = " connexion "  class = " BTN-connexion " >
+                < h2 > Se Connecter </ h2 >
+            </ a >
+
+            < A  href = " inscription "  class = " actif BTN-ENREGISTRER " >
+                < h2 > S'inscrire </ h2 >
+            </ a >
+        </ div >
+
+        < div  class = " connexion " >
+
+            < form  class = " contact-form "  name = " connexion "  method = " post " >
+
+                < label > Identifiant </ label >
+
+                < input  name = " email "  placeholder = " "  type = " text " >
+
+
+                < label > Mot de passe </ label >
+
+                < input  name = " password "  placeholder = " "  type = " password " >
+
+                < div  class = " check " >
+
+                    < étiquette >
+
+                        < input  id = " check "  type = " checkbox "  class = " checkbox " >
+
+                        < svg  xmlns = " http://www.w3.org/2000/svg "  width = " 26px "  height = " 23px " >
+
+                            < path  class = " chemin de retour "
+                                  d = " M1.5,6.021V2.451C1.5,2.009,1.646,1.5,2.3,1.5h18.4c0.442,0,0.8,0.358,0.8,0.801v18.398c0,0.442-0.357,0.801-0.8, 0.801H2.3c-0.442,0-0.8-0.358-0.8-0.801V6 " >
+
+                            </ chemin >
+
+                            < path  class = " déplacement de chemin "
+                                  d = " M24.192,3.813L11.818,16.188L1.5,6.021V2.451C1.5,2.009,1.646,1.5,2.3,1.5h18.4c0.442,0,0.8,0.358,0.8,0.801v18. 398c0,0.442-0.357,0.801-0.8,0.801H2.3c-0.442,0-0.8-0.358-0.8-0.801V6 " >
+
+                            </ chemin >
+
+                        </ svg >
+
+                    </ label >
+
+                    < h3 > Restez connecté </ h3 >
+
+                </ div >
+
+                <! - Captcha ->
+                < tête >
+                    < title > Démo reCAPTCHA: page simple </ title >
+                    < script  src = " https://www.google.com/recaptcha/api.js "  async  defer > </ script >
+                </ tête >
+                < corps >
+                < form  action = " ? "  method = " POST " >
+                    < div  class = " g-recaptcha "  data-sitekey = " 6LcNR9YUAAAAAB0P3Y5B0UdAlg_sVQYa5l0nQ6MC " > </ div >
+                    < Br />
+                    < input  class = " submit "  value = " login "  type = " submit " >
+                </ form >
+                </ corps >
+                <! -  ->
+
+            </ form >
+
+            < heure >
+
+
+        </ div >
+
+
+
+    </ div >
+
+
+</ corps >
+
+
+
+
+</ html >

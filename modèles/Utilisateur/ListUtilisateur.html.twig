@@ -1,0 +1,65 @@
+{% Étend  " /Article/Accueil.html.twig " %}
+{% block  title %} Liste utilisateur {% endblock %}
+
+{% block  body %}
+
+    < nav >
+        < div  class = " menu " >
+            < ul >
+
+                < li >
+                    < Une  classe = " menu déroulant items "  href = " / accueil " > < img  src = " /uploads/images/logo.png " > </ a >
+                </ li >
+            </ ul >
+        </ div >
+    </ nav >
+    </ br > </ br > </ br > </ br >
+
+    < table  class = " table table-striped " >
+    < thead >
+    < tr >
+        {% pour le  rôle  dans la  session . connexion . rôles %}
+        {% if  role  ==  ' administrateur ' %}
+        < th  scope = " col " > Id </ th >
+        {% endif %}
+        {% endfor %}
+        < th  scope = " col " > Nom </ th >
+        < th  scope = " col " > Prenom </ th >
+        {% pour le  rôle  dans la  session . connexion . rôles %}
+        {% if  role  ==  ' administrateur ' %}
+        < th  scope = " col " > Rôle </ th >
+        {% endif %}
+        {% endfor %}
+        < th  scope = " col " > Projet </ th >
+    </ tr >
+    </ thead >
+    < tbody >
+    {% pour l'  utilisateur  dans  utilisateurlist %}
+
+        < tr > {% pour le  rôle  dans la  session . connexion . rôles %}
+            {% if  role  ==  ' administrateur ' %}
+            < td > {{ Utilisateur . USER_ID }} </ td >
+            {% endif %}
+    {% endfor %}
+            < td > {{ Utilisateur . USER_NOM }} </ td >
+            < td > {{ Utilisateur . USER_PRENOM }} </ td >
+        {% pour le  rôle  dans la  session . connexion . rôles %}
+            {% if  role  ==  ' administrateur ' %}
+            < td > {{ Utilisateur . USER_ROLE }} </ td >
+            {% endif %}
+            {% endfor %}
+            < td > {{ Utilisateur . USER_PROJET }} </ td >
+            < td >
+                < div  class = " btn-group "  role = " group "  aria-label = " Exemple de base " >
+                    {% pour le  rôle  dans la  session . connexion . rôles %}
+                          {% if  role  ==  ' administrateur ' %}
+                    < A  class = " BTN BTN-danger "  href = " / Utilisateur / delUtilisateur / {{ Utilisateur . USER_ID }} " > < i  class = " fas fa fois-cercle " > </ i > </ a >
+                </ div >
+            </ td >
+        </ tr >
+        {% endif %}
+    {% endfor %}
+    {% endfor %}
+    </ tbody >
+
+{% endblock %}
