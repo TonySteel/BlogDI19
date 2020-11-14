@@ -1,0 +1,9 @@
+{
+    " require " : {
+        " brindille / brindille " : " ^ 3,0 " ,
+        " swiftmailer / swiftmailer " : " ^ 6.2 " ,
+      " ext-json " : " * " ,
+      " ext-pdo " : " * " ,
+      " ext-mysqli " : " * "
+    }
+}
